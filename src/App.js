@@ -1,9 +1,12 @@
 
 
+import { UserContext } from './index'
+import { useContext } from 'react';
 function App() {
+  const value = useContext(UserContext)
   return (
     <div >
-      App
+      Hello {value}
     </div>
   );
 }
